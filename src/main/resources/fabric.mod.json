@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "govnishe",
+	"version": "${version}",
+	"name": "govnishe",
+	"description": "Данный мод создан исключительно для забавы и чтоб учиться кодить мне на Java",
+	"authors": [
+		"suncup"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/"
+	},
+	"license": "MIT",
+	"icon": "assets/govnishe/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.uebishe.govnishe.Govnishe"
+		],
+
+		"client": [
+			"net.uebishe.govnishe.GovnisheClient"
+		],
+		"fabric-datagen": [
+			"net.uebishe.govnishe.GovnisheDataGenerator"
+		]
+	},
+	"mixins": [
+		"govnishe.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
